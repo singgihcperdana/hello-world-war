@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-spring-boot:run</actionName>
+            <displayName>spring-boot:run</displayName>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-clean package</actionName>
+            <displayName>clean package</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-fabric8:deploy</actionName>
+            <displayName>fabric8:deploy</displayName>
+            <goals>
+                <goal>fabric8:deploy</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-clean fabric8:deploy</actionName>
+            <displayName>clean fabric8:deploy</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>fabric8:deploy</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </action>
+    </actions>
